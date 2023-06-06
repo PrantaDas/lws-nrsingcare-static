@@ -27,7 +27,7 @@ const NavBar = () => {
         <section>
             <div className='px-10 pt-10 pb-2 grid grid-cols-2 justify-items-center'>
                 <div>
-                    <Link><h1 className='font-extrabold text-3xl'>LW Nursing Care</h1></Link>
+                    <Link><h1 className='font-extrabold text-[#ED315D] text-3xl'>LW Nursing Care</h1></Link>
                 </div>
                 <div className='flex gap-10'>
                     <div className='flex items-center gap-8'>
@@ -50,7 +50,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <div className="navbar bg-neutral text-neutral-content flex justify-around">
+            <div className="navbar bg-bc-secondary flex justify-around">
                 <div className='tabs'>
                     {
                         tabs.map((tab) => <Link className='tab font-bold focus:tab-active' key={tab.name} to={tab.path}>{tab.name}</Link>)

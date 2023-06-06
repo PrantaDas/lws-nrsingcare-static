@@ -42,10 +42,9 @@ const data = [
 const HomeSection = () => {
     return (
         <section>
-            <h2 className="mt-16 font-bold text-4xl text-center uppercase tracking-wider">LW Nursing Care Agency</h2>
-            <h3 className='my-5 text-center font-bold text-2xl text-sky-400'>Our Services</h3>
+            <h3 className='my-5 text-center font-bold text-3xl text-txt-primary'>Our Services</h3>
             <div className='divider w-60 mx-auto' />
-            <div className="my-5 container mx-auto grid grid-cols-3 justify-items-center gap-y-14 bg-indigo-900 py-10 rounded-md">
+            <div className="my-5 container mx-auto grid grid-cols-3 justify-items-center gap-y-14 py-10 rounded-md">
                 {
                     data.map((d, i) => <ServiceCard key={i} card={d} />)
                 }
