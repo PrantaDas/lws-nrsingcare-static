@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-image': "url('/src/assets/images/wallhaven-mpwjo9.jpg')"
+      }
+    },
   },
   daisyui: {
     themes: ["light", "dark", "synthwave"],

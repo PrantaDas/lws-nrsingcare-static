@@ -10,7 +10,7 @@ import image3 from '../../../assets/images/national-cancer-institute-NFvdKIhxYlU
 
 const Banner = () => {
     return (
-        <div className='h-[72vh]'>
+        <div className='h-[60vh]'>
             <Swiper
                 autoplay={{
                     delay: 2500,

@@ -1,0 +1,13 @@
+.card-description::before {
+    content: '“';
+    padding-right: 8px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-description::after {
+    content: '”';
+    padding-left: 8px;
+    font-weight: bold;
+    font-style: italic;
+}
