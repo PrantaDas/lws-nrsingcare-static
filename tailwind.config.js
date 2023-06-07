@@ -19,7 +19,7 @@ module.exports = {
     backgroundColor: {
       'bc-primary': '#ED315D',
       'bc-secondary': '#1E6091',
-      'bc-info': '#C1FFF8',
+      'bc-info': '#DEFDFA',
       'bc-white': '#FFFFFF',
     }
   },

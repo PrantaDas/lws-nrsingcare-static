@@ -1,4 +1,5 @@
 import React from 'react';
+import CountUp from 'react-countup';
 import AboutImage from '../../assets/images/about1.png';
 
 const CompanyInfo = () => {
@@ -18,11 +19,31 @@ const CompanyInfo = () => {
                     <p className="text-txt-gray py-3 tracking-wider leading-realaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim <br /> nostrud</p>
                     <div className="my-2 flex">
                         <div className='shadow-lg p-20 text-center'>
-                            <p className='font-bold text-txt-primary text-xl'>16 +</p>
+                            <p className='font-bold text-txt-primary text-xl'>
+                                <CountUp
+                                    redraw={true}
+                                    duration={3}
+                                    start={0}
+                                    end={16}
+                                    enableScrollSpy={true}
+                                    scrollSpyOnce={true}
+                                />
+                                <span className='pl-1 font-extrabold'>+</span>
+                            </p>
                             <p className='text-txt-primary'>Years of Experience</p>
                         </div>
                         <div className='shadow-lg p-20 text-center bg-bc-primary'>
-                            <p className='font-bold text-xl text-txt-white'>2000 +</p>
+                            <p className='font-bold text-xl text-txt-white'>
+                                <CountUp
+                                    redraw={true}
+                                    duration={3}
+                                    start={0}
+                                    end={2000}
+                                    scrollSpyOnce={true}
+                                    enableScrollSpy={true}
+                                />
+                                <span className='pl-1 font-extrabold'>+</span>
+                            </p>
                             <p className='text-txt-white'>Satisfied Patient</p>
                         </div>
                     </div>
