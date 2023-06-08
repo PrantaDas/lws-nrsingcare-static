@@ -114,14 +114,14 @@ const data = [
 
 const Services = () => {
     return (
-        <section className='h-[135vh] bg-bc-info'>
-            <div className='container mx-auto pt-10'>
-                <div className='text-center'>
-                    <h2 className='text-txt-primary text-2xl font-medium'>Our Services</h2>
-                    <h1 className='text-txt-secondary font-bold text-4xl leading-normal py-1 tracking-normal'>For the best patients and families,<br /> with the best nurses</h1>
+        <section id='services' className='lg:h-[135vh] max-h-max pb-10 bg-bc-info'>
+            <div className='container mx-auto pt-10 grid grid-cols-1 justify-items-center h-max'>
+                <div className='lg:text-center lg:w-full w-[20rem] g'>
+                    <h2 className='text-txt-primary text-2xl font-extrabold lg:font-[500]'>Our Services</h2>
+                    <h1 className='text-txt-secondary font-bold text-2xl lg:text-4xl leading-normal py-1 tracking-normal'>For the best patients and families,<br /> with the best nurses</h1>
                     <p className='py-1 text-txt-gray font-[400] tracking-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, saed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua Ut enim ad minim nostrud</p>
                 </div>
-                <div className="mt-10 flex text-center justify-center">
+                <div className="mt-10 lg:flex text-center justify-center">
                     {
                         data.slice(0, 3).map((d, i) => <div className={d.styles} key={i}>
                             <div className="p-5">
@@ -142,7 +142,7 @@ const Services = () => {
                         </div>)
                     }
                 </div>
-                <div className="flex text-center justify-center">
+                <div className="lg:flex text-center justify-center">
                     {
                         data.slice(3, 6).map((d, i) => <div className={d.styles} key={i}>
                             <div className="p-5">

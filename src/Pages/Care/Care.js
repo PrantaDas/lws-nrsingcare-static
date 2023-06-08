@@ -24,15 +24,15 @@ const data = [
 
 const Care = () => {
     return (
-        <section className='h-[95vh] bg-bc-secondary'>
-            <div className='grid grid-cols-2 h-full container mx-auto gap-28 justify-items-center pt-10'>
-                <div>
+        <section className='lg:h-[95vh] max-h-max bg-bc-secondary'>
+            <div className='grid grid-cols-1 container mx-auto pb-10 w-[20rem] lg:w-full lg:flex lg:justify-center lg:h-full lg:gap-28 justify-items-center pt-10'>
+                <div className=''>
                     <h3 className='text-txt-white text-xl tracking-wider py-3 leading-6'>Why Choose Us</h3>
                     <h1 className='text-3xl font-bold tracking-wider leading-snug text-txt-white'>We take care of your needs,<br /> wherever you are.</h1>
                     <p className='text-md font-medium text-txt-white tracking-wider leading-6 py-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim <br />  nostrud</p>
                     <div className="pt-2">
                         {
-                            data.map((d) => <div className='my-3 bg-bc-white flex justify-around h-32 items-center w-[40rem] px-7 gap-8'>
+                            data.map((d) => <div className='my-3 bg-bc-white lg:flex justify-around py-4 lg:h-32 items-center lg:w-[40rem] px-7 gap-8'>
                                 <div>
                                     <figure>
                                         <img src={d.image} alt="" />
@@ -46,9 +46,9 @@ const Care = () => {
                         }
                     </div>
                 </div>
-                <div>
-                    <figure className='h-[80vh] pt-10'>
-                        <img className='h-full' src={Doctor} alt="" />
+                <div className='p'>
+                    <figure className='lg:h-[80vh] lg:w-full w-[20rem] bg-center h-96 lg:pt-10'>
+                        <img className='h-full w-full' src={Doctor} alt="" />
                     </figure>
                 </div>
             </div>

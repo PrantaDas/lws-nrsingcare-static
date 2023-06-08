@@ -7,6 +7,7 @@ import Services from '../../Components/Services/Services';
 import Care from '../Care/Care';
 import Specification from '../Specification/Specification';
 import Gallery from '../../Components/Gallery/Gallery';
+import Contact from '../../Components/Contact/Contact';
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <Promises />
             <Specification />
             <Gallery />
+            <Contact />
             <TestiMonials />
         </div>
     );

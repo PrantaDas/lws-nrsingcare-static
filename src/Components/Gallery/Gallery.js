@@ -46,17 +46,23 @@ const data = [
 
 const Gallery = () => {
     return (
-        <section className='bg-bc-white py-20'>
+        <section id='gallery' className='bg-bc-white py-20'>
             <div className='container mx-auto'>
-                <div className='text-center'>
+                <div className='text-center w-[23rem] lg:w-full mx-auto'>
                     <h2 className='text-txt-primary font-medium text-2xl'>Gallery</h2>
-                    <h1 className='my-3 text-3xl text-txt-secondary font-semibold leading-normal'>Our cherished moments with<br /> our  patients.</h1>
-                    <p className='text-txt-gray text-sm tracking-wider leading-'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, saed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua Ut enim ad minim nostrud</p>
+                    <div className='lg:block hidden'>
+                        <h1 className='my-3 text-3xl text-txt-secondary font-semibold leading-normal'>Our cherished moments with<br /> our  patients.</h1>
+                        <p className='text-txt-gray text-sm tracking-wider leading-'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, saed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua Ut enim ad minim nostrud</p>
+                    </div>
+                    <div className='lg:hidden block'>
+                        <h1 className='my-3 text-3xl text-txt-secondary font-semibold leading-normal'>Our cherished moments with our  patients.</h1>
+                        <p className='text-txt-gray text-sm tracking-wider leading-'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, saed do eiusmod tempor  incididunt ut labore et dolore magna aliqua Ut enim ad minim nostrud</p>
+                    </div>
                 </div>
-                <div className='grid grid-cols-4 justify-items-center gap-y-4 mt-10'>
+                <div className='grid grid-cols-4 justify-items-center lg:gap-y-4 mt-10'>
                     {
                         data.map((d) => <div className='' key={d.id}>
-                            <figure className='w-[23rem]'>
+                            <figure className='w-[6.8rem] lg:w-[23rem]'>
                                 <img src={d.photo} alt="" />
                             </figure>
                         </div>)
